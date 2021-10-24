@@ -7,5 +7,5 @@ let x = setInterval(function() {
   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
   let seconds = Math.floor((distance % (1000 * 60)) / 1000)
-  document.getElementById("timer").innerHTML = `We Met: ${days}d ${hours}h ${minutes}m ${seconds}s`
+  document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`
 }, 1000)
